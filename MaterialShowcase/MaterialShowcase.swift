@@ -327,7 +327,7 @@ extension MaterialShowcase {
     
     let mask = CAShapeLayer()
     mask.path = mutablePath
-    mask.fillRule = CAShapeLayerFillRule.evenOdd
+    mask.fillRule = kCAFillRuleEvenOdd ? kCAFillRuleEvenOdd : CAShapeLayerFillRule.evenOdd
     
     view.layer.mask = mask
   }
